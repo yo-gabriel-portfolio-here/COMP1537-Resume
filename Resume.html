@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+    <!-- Resume for Gabriel Ronceria Munoz -->
+
+
         <head>
         <title>Resume</title>
         <meta charset="UTF-8">
@@ -7,37 +12,112 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+
+
+        <!-- Presentation and Navigation -->
+
+
         <header>
+            <hr>
         <h1>Gabriel Ronceria Munoz</h1>
         <h2>BCIT CST Student</h2>
         <br>
-        </header> 
+        </header>
+        <nav>
+            <a href="#Educational Background">Educational Background</a>
+            <br>
+            <a href="#Professional Background">Professional Background</a>
+            <br>
+            <a href="#Skills">Skills</a>
+            <br>
+            <a href="#Achievements">Achievements</a>
+            <br>
+            <a href="#References">References</a>
+        </nav>
+
+
+        <!-- Form -->
+
+
             <hr>
+            <form>
+                <fieldset>
+                    <legend>User Profile:</legend>
+            <input type="text" placeholder="Username"
+            pattern="[A-Za-z]{8,20}" title="Please enter a valid username (8-20 letters)" required>
+            <input type="password" placeholder="Password"
+            pattern="[A-Za-z0-9]{10,20}" title="Please enter a valid password (10-20 characters/numbers)"
+            autocomplete="new-password" required>
+            <input type="number" placeholder="Age" min="10" max="100"
+            title="Please enter a valid age (10-100)" required>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            </fieldset>
+        </form>
+
+
+        <!-- Contact Information -->
+
+        <hr>
             <h2>Contact Information:</h2>
         <p><b>Phone:</b> 604 619 6993</p>
         <p><b>Email:</b> gronceriamunoz@my.bcit.ca</p>
         <p><b>Location:</b> BCIT Burnaby Campus, Vancouver, BC</p>
         <br>
-        <img src="https://cdn-icons-png.flaticon.com/512/17246/17246491.png"
-         alt="Profile Picture" width="200" height="200"/>
+
+
+        <!--Profile Photo-->
+
+        <section>
+        <figure>
+        <img src="https://github.com/yo-gabriel-portfolio-here/COMP1537-Resume/blob/main/Photo_html_resume.jpeg?raw=true"
+         alt="Profile Picture" width="200" height="250">
+         <figcaption>Gabriel Ronceria Munoz</figcaption>
+         </figure>
+        </section>
+
+
+            <!-- Educational Background -->
+
+            <hr>
+            <section id="Educational-Backround">
          <h2>Educational Background:</h2>
-         <p>High School Student from Sutherland Secondary School and currently studying Computer Systems Technology at BCIT. 
-            I have a strong interest in <b>AI and software development</b>, and I am eager to learn how the tech world is going to 
+         <p>High School Student from <a href="https://sutherland.sd44.ca/" target="_blank">Sutherland Secondary School</a> and currently
+            studying Computer Systems Technology at <a href="https://www.bcit.ca/" target="_blank">BCIT</a>.
+            I have a strong interest in <b>AI and software development</b>, and I am eager to learn how the tech world is going to
             change with this new tool and take advantage of this new era by applying my skills and new knowledge in real-world projects.
          </p>
+         </section>
+
+
+         <!-- Professional Background -->
+
+         <hr>
+         <article>
+         <section id="Professional-Background">
          <h2> Professional Background:</h2>
          <p> Shoppers Drugmart - Lynn Valley Centre.</p>
          <p>  May 2024 - July 2026</p>
-         <p>  Position: Cashier and Merchandiser</p>
+         <p><i>Position: Cashier and Merchandiser</i></p>
+         <small>Here are some of the responsabilities I had to deal with at <abbr title="Shoppers Drugmart">SDM</abbr>:</small>
          <ul>
             <li> Process customers purchases and handle cash, debit, and credit transactions.</li>
             <li> Maintained clean and organized checkout areas.</li>
             <li> Provide product information and resolve customer concerns politely.</li>
             <li> Developed teamwork and communication skills through collaboration with colleagues.</li>
          </ul>
+         </section>
+         </article>
             <br>
+            <section id="Skills">
+
+
+                <!--Skills-->
+
+
+                <hr>
             <h2>Skills:</h2>
-            <ul> 
+            <ul>
                 <li> Communication skills</li>
                 <li> Customer service</li>
                 <li> Teamwork</li>
@@ -45,22 +125,121 @@
                 <li> Time management</li>
                 <li> Adaptability</li>
             </ul>
+            </section>
+            <section id="Achievements">
+
+
+                <!-- Achievements -->
+
+
+                <hr>
             <h2>Achievements:</h2>
-            <ul>
+            <ol>
                 <li> More than 2 years of professional work experience with zero money handling issues.</li>
                 <li> Received recognition for outstanding customer service at Shoppers Drugmart.</li>
-                <li> Get accepted into the BCIT CST program with a good academic record.</li>
-                <ul>
-                    <li> Achieved a high GPA in the BCIT CST program.</li>
+                <li> Get accepted into the <span>BCIT CST program</span>with a good academic record.</li>
+                    <li> Achieved a good GPA in <abbr title="Sutherland Secondary School">SSS</abbr>.</li>
                     <li> Successfully completed challenging coursework and projects.</li>
-                </ul>
+                </ol>
+                </section>
 
+
+                <!-- References-->
+
+
+                 <hr>
+                        <section id="References">
+                    <aside>
             <h3> References:</h3>
-            <ul>
-                <li> Ex Store Manager: Connie McNicol, 604 984-9187</li>
-                <li> Store Manager: Nadine Sidhu, 778 385-2517</li>
-                <li> Ex Assistan Store Manager: Mohammad AleMohammad, 604 317-3535</li>
-            </ul>
+            <dl>
+                <dt> Connie McNicol </dt>
+                <dd> - Ex Store Manager, 604 984-9187 </dd>
+                <dt> Nadine Sidhu </dt>
+                <dd> - Store Manager, 778 385-2517 </dd>
+                <dt> Mohammad AleMohammad </dt>
+                <dd> - Ex Assistant Store Manager, 604 317-3535 </dd>
+            </dl>
+            </aside>
+            </section>
+        <br>
 
-</body>
+
+        <!-- Current courses at BCIT -->
+
+
+        <hr>
+        <section>
+            <h3> BCIT Courses </h3>
+            <br><br>
+            <table>
+                <caption> Gabriel's Courses at BCIT </caption>
+                <tbody>
+                <tr>
+                    <th> Course Name </th>
+                    <th> Course Number </th>
+                    <th> Credits </th>
+                </tr>
+                </tbody>
+                    <tbody>
+                <tr>
+                    <td> COMP 1800 </td>
+                    <td> 46873 </td>
+                    <td> 0.000 </td>
+                </tr>
+                    </tbody>
+                    <tbody>
+                <tr>
+                    <td> COMP 1537 </td>
+                    <td> 46860 </td>
+                    <td> 0.000 </td>
+                </tr>
+                </tbody>
+                <tbody>
+                <tr>
+                    <td> COMP 1712 </td>
+                    <td> 45299 </td>
+                    <td> 0.000 </td>
+                </tr>
+                </tbody>
+                <tbody>
+                <tr>
+                    <td> COMP 1510 </td>
+                    <td> 30386 </td>
+                    <td> 6.000 </td>
+                </tr>
+                </tbody>
+                <tbody>
+                <tr>
+                    <td> COMP 1113 </td>
+                    <td> 32205 </td>
+                    <td> 4.000 </td>
+                </tr>
+                </tbody>
+                <tbody>
+                <tr>
+                    <td> COMM 1116 </td>
+                    <td> 34327 </td>
+                    <td> 0.000 </td>
+                </tr>
+                </tbody>
+                <tbody>
+                <tr>
+                    <td> COMP 1100 </td>
+                    <td> 31002 </td>
+                    <td> 1.000 </td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+        <!-- Note -->
+
+
+        <footer>
+            <hr>
+            <p><small>Note: Ready for any job interview,
+                for contact information call this number: 604 619-6993</small></p>
+                </footer>
+    </body>
 </html>
