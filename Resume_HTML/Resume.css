@@ -50,6 +50,8 @@
     opacity: 0.5;
 }
 
+/* -----------------------------------------------------------------------------------------------------------------*/
+
 * {
     font-family: "Audiowide", sans-serif;
 }
@@ -76,6 +78,10 @@ h2 {
     background-color: #1bbbd4;
 }
 
+.navigation a:hover{
+    background-color: red;
+}
+
 .form {
     display: flex;
     flex-direction: column;
@@ -83,6 +89,19 @@ h2 {
     background-color: #7e1f16;
     border: 5px solid rgb(54, 28, 172);
 
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"]{
+    background-color: rgb(39, 9, 120);
+    border: 3px solid aquamarine;
+    color: white;
+}
+
+.form button{
+    color: rgb(39, 9, 120);
+    background-color: aquamarine;
 }
 
 body {
@@ -108,6 +127,11 @@ body {
     border: 5px solid rgb(255, 2, 2);
 }
 
+.profile-photo:hover{
+    transform: scale(1.009);
+    box-shadow: 0 0 20px #ff0000;
+}
+
 
 figcaption {
     text-align: center;
@@ -125,6 +149,11 @@ figcaption {
     justify-content: flex-end;
 }
 
+.contact-info:hover{
+    transform: scale(1.009);
+    box-shadow: 0 0 20px red;
+}
+
 .education {
     display: flex;
     flex-direction: column;
@@ -137,9 +166,18 @@ figcaption {
     justify-content: flex-end;
 }
 
+.education:hover{
+    transform: scale(1.009);
+    box-shadow: 0 0 20px red;
+}
+
 .education-p {
     text-align: center;
     max-width: 600px;
+}
+
+.education a:hover {
+    background-color: yellow;
 }
 
 .professional {
@@ -152,6 +190,14 @@ figcaption {
     justify-content: flex-start;
 }
 
+.professional:hover{
+    transform: scale(1.009);
+    box-shadow: 0 0 20px red;
+}
+
+.professional abbr:hover{
+    background-color: rgb(210, 9, 210);
+}
 
 .skills {
     display: flex;
@@ -162,6 +208,12 @@ figcaption {
     height: 260px;
 }
 
+.skills:hover{
+    transform: scale(1.009);
+    box-shadow: 0 0 20px red;
+}
+
+
 .references {
     display: flex;
     flex-direction: column;
@@ -169,6 +221,11 @@ figcaption {
     border: 4px solid red;
     width: 350px;
     margin-right: -15px;
+}
+
+.references:hover{
+    transform: scale(1.009);
+    box-shadow: 0 0 20px red;
 }
 
 .skills-references {
@@ -183,6 +240,11 @@ figcaption {
     background-color: #108193 ;
     border: 5px solid red;
     flex-direction: column;
+}
+
+.achievements:hover{
+    transform: scale(1.009);
+    box-shadow: 0 0 20px red;
 }
 
 .go-top {
@@ -202,14 +264,27 @@ figcaption {
     border: 5px solid red;
 }
 
-table {
-    border-collapse: collapse;
-    width: 100%;
+.courses:hover{
+    transform: scale(1.009);
+    box-shadow: 0 0 20px red;
 }
 
 th, td {
     border: 1px solid white;
     padding: 5px;
+}
+
+th:nth-child(odd){
+    background-color: #0f0367;
+}
+
+th:nth-child(even){
+    background-color: #0f0367;
+}
+
+tr:hover{
+    transform: scale(1.009);
+    background-color: rgb(102, 16, 16);
 }
 
 .achievements {
@@ -231,4 +306,8 @@ footer {
     background-color: aquamarine;
     border: 3px solid #b47abf;
     width: 140px;
+}
+
+.go-top:hover{
+    background-color: red;
 }
