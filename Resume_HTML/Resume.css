@@ -52,11 +52,13 @@
 
 /* -----------------------------------------------------------------------------------------------------------------*/
 
+/*Universal selector (whole page changes its font) */
+
 * {
     font-family: "Audiowide", sans-serif;
 }
 
-/*title decoration*/
+/*Title decoration using ID selector because there can only be one ID on the website*/
 
 #name {
     display: flex;
@@ -64,11 +66,15 @@
   text-shadow: 2px 2px #ff0000;
 }
 
+/*Subtitle decoration using element selector*/
+
 h2 {
     display: flex;
     justify-content: center;
      text-shadow: 2px 2px #0011ff;
 }
+
+/*Nav bar decoration and displayed as a row plues the hover change of color*/
 
 .navigation {
     display: flex;
@@ -81,6 +87,8 @@ h2 {
 .navigation a:hover{
     background-color: red;
 }
+
+/*Form decoration, added some cool colors*/
 
 .form {
     display: flex;
@@ -104,6 +112,8 @@ input[type="number"]{
     background-color: aquamarine;
 }
 
+/*Added a backround image that makes it look super cool like starwars*/
+
 body {
     display: flex;
     flex-direction: column;
@@ -113,6 +123,9 @@ body {
     background-image: url("starry-night-sky-background-with-meteors-illustration-vector.jpg");
     color: white;
 }
+
+/*Displays the photo on the left and contact info on the right because of the row reverse plus
+cool hover animation on each of the boxes*/
 
 .photo-contact {
     display: flex;
@@ -132,10 +145,13 @@ body {
     box-shadow: 0 0 20px #ff0000;
 }
 
+/*Aligned using element selector to be centered with the photo*/
 
 figcaption {
     text-align: center;
 }
+
+/*Contact info decoration and hover animation*/
 
 .contact-info {
     display: flex;
@@ -153,6 +169,8 @@ figcaption {
     transform: scale(1.009);
     box-shadow: 0 0 20px red;
 }
+
+/*Education decoration and adjusts to the content and box location plus hover animation*/
 
 .education {
     display: flex;
@@ -176,9 +194,13 @@ figcaption {
     max-width: 600px;
 }
 
+/*Used a child connector for all the a in .education and added a hover animation to it*/
+
 .education a:hover {
     background-color: yellow;
 }
+
+/*Professional box displayed better with decoration and hover animation*/
 
 .professional {
     display: flex;
@@ -195,9 +217,13 @@ figcaption {
     box-shadow: 0 0 20px red;
 }
 
+/*Child selector for abbr which gives it a hover animation*/
+
 .professional abbr:hover{
     background-color: rgb(210, 9, 210);
 }
+
+/*Skills decoration, alignment and hover animation*/
 
 .skills {
     display: flex;
@@ -213,6 +239,7 @@ figcaption {
     box-shadow: 0 0 20px red;
 }
 
+/*References box adjust position, decoration and hover animation*/
 
 .references {
     display: flex;
@@ -228,12 +255,17 @@ figcaption {
     box-shadow: 0 0 20px red;
 }
 
+/*Skills and references boxes placement*/
+
+
 .skills-references {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     gap: 15px
 }
+
+/*Achievements decoration and hover animation*/
 
 .achievements{
     display: flex;
@@ -247,12 +279,16 @@ figcaption {
     box-shadow: 0 0 20px red;
 }
 
+/*Extra anchor because it was annoying to scroll back up*/
+
 .go-top {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
 }
+
+/*Courses table decoration, size adjustement, and position fix plus hover animation*/
 
 .courses {
     display: flex;
@@ -269,10 +305,14 @@ figcaption {
     box-shadow: 0 0 20px red;
 }
 
+/*Added a cool looking white outline to the table*/
+
 th, td {
     border: 1px solid white;
     padding: 5px;
 }
+
+/*Gave the top elements a different color because they are like a title for the table plus cool hover animation*/
 
 th:nth-child(odd){
     background-color: #0f0367;
@@ -287,10 +327,14 @@ tr:hover{
     background-color: rgb(102, 16, 16);
 }
 
+/*Changes achievements color*/
+
 .achievements {
     background-color: #1bbbd4;
     border-color: 5px solid red;
 }
+
+/*Just centers that <small> element that I added*/
 
 footer {
     display: flex;
@@ -298,6 +342,8 @@ footer {
     align-items: center;
 
 }
+
+/*Last anchor decoration and fixed position plus cool hover animation*/
 
 .go-top{
     display: flex;
